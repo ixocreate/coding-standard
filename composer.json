@@ -1,6 +1,6 @@
 {
-    "name": "kiwi-suite/coding-standard",
-    "description": "kiwi-suite/coding-standard collects the coding standard definitions",
+    "name": "ixocreate/coding-standard",
+    "description": "ixocreate/coding-standard collects the coding standard definitions",
     "license": "MIT",
     "type": "library",
     "authors": [{

@@ -1,0 +1,16 @@
+{
+    "name": "kiwi-suite/coding-standard",
+    "description": "kiwi-suite/coding-standard collects the coding standard definitions",
+    "license": "MIT",
+    "type": "library",
+    "authors": [{
+        "name": "IXOCREATE",
+        "email": "opensource@ixocreate.com"
+    }],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13"
+    }
+}

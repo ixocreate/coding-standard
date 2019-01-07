@@ -3,9 +3,11 @@
     "description": "Collects the coding standard definitions",
     "license": "MIT",
     "type": "library",
-    "authors": [{
-        "name": "IXOCREATE"
-    }],
+    "authors": [
+        {
+            "name": "IXOCREATE"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "friendsofphp/php-cs-fixer": "^2.13"

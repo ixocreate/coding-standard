@@ -1,6 +1,13 @@
-# ixocreate/coding-standard
+# IXOCREATE coding standard
 
+## Installation
+
+Install the package via composer:
+
+```sh
+composer require ixocreate/coding-standard
+```
 
 ## License
 
-ixocreate/coding-standard is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) - see the `LICENSE` file for details
+The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.

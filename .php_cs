@@ -6,6 +6,23 @@ $header = <<<'EOF'
 @license MIT License
 EOF;
 
+$dirs = [
+    'src',
+    'tests',
+];
+
+$optionalDirs = [
+    'bootstrap',
+    'config',
+    'resources/migrations',
+];
+
+foreach ($optionalDirs as $dir) {
+    if (is_dir($dir)) {
+        $dirs[] = $dir;
+    }
+}
+
 return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setRules([
@@ -32,6 +49,10 @@ return PhpCsFixer\Config::create()
         'phpdoc_scalar' => true,
         'phpdoc_summary' => false,
         'no_blank_lines_after_phpdoc' => true,
+
+        'ordered_imports' => [
+            'sort_algorithm' => 'alpha',
+        ],
 
         'class_attributes_separation' => ['elements' => ['const', 'method', 'property']],
         'single_blank_line_before_namespace' => true,
@@ -69,7 +90,5 @@ return PhpCsFixer\Config::create()
         'trailing_comma_in_multiline_array' => true,
     ])
     ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->in('src')
-            ->in('tests')
+        PhpCsFixer\Finder::create()->in($dirs)
     );

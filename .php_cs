@@ -50,6 +50,10 @@ return PhpCsFixer\Config::create()
         'phpdoc_summary' => false,
         'no_blank_lines_after_phpdoc' => true,
 
+        'ordered_imports' => [
+            'sort_algorithm' => 'alpha',
+        ],
+
         'class_attributes_separation' => ['elements' => ['const', 'method', 'property']],
         'single_blank_line_before_namespace' => true,
         'combine_consecutive_unsets' => true,

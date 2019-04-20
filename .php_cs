@@ -6,6 +6,23 @@ $header = <<<'EOF'
 @license MIT License
 EOF;
 
+$dirs = [
+    'src',
+    'tests',
+];
+
+$optionalDirs = [
+    'bootstrap',
+    'config',
+    'resources/migrations',
+];
+
+foreach ($optionalDirs as $dir) {
+    if (is_dir($dir)) {
+        $dirs[] = $dir;
+    }
+}
+
 return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setRules([
@@ -69,7 +86,5 @@ return PhpCsFixer\Config::create()
         'trailing_comma_in_multiline_array' => true,
     ])
     ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->in('src')
-            ->in('tests')
+        PhpCsFixer\Finder::create()->in($dirs)
     );

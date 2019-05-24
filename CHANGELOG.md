@@ -1,7 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/coding-standard/compare/2.0.0...develop)
+## [Unreleased](https://github.com/ixocreate/coding-standard/compare/2.1.0...develop)
 
+## [v2.1.0 (2019-05-24)](https://github.com/ixocreate/coding-standard/compare/2.0.0...2.1.0)
 ### Changed
 - Copyright in header
 - Composer author

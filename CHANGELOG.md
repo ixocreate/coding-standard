@@ -2,6 +2,10 @@
 
 ## [Unreleased](https://github.com/ixocreate/coding-standard/compare/2.0.0...develop)
 
+### Changed
+- Copyright in header
+- License
+
 ## [v2.0.0 (2019-04-20)](https://github.com/ixocreate/coding-standard/compare/1.0.0...2.0.0)
 
 ### Added

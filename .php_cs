@@ -1,5 +1,4 @@
 <?php
-
 $header = <<<'EOF'
 @link https://github.com/ixocreate
 @copyright IXOLIT GmbH
@@ -89,6 +88,4 @@ return PhpCsFixer\Config::create()
         'standardize_not_equals' => true,
         'trailing_comma_in_multiline_array' => true,
     ])
-    ->setFinder(
-        PhpCsFixer\Finder::create()->in($dirs)
-    );
+    ->setFinder(PhpCsFixer\Finder::create()->in($dirs));

@@ -14,5 +14,8 @@
     "require": {
         "php": "^7.1",
         "friendsofphp/php-cs-fixer": "^2.13"
+    },
+    "require-dev": {
+        "ixocreate/test": "dev-develop"
     }
 }

@@ -16,6 +16,6 @@
         "friendsofphp/php-cs-fixer": "^2.13"
     },
     "require-dev": {
-        "ixocreate/test": "dev-develop"
+        "ixocreate/test": "^0.1.0"
     }
 }

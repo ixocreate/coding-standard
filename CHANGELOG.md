@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/coding-standard/compare/2.1.0...develop)
+## [Unreleased](https://github.com/ixocreate/coding-standard/compare/2.1.1...develop)
+
+## [v2.1.1 (2021-01-19)](https://github.com/ixocreate/coding-standard/compare/2.1.0...2.1.1)
+### Changed
+- updated required php version
 
 ## [v2.1.0 (2019-05-24)](https://github.com/ixocreate/coding-standard/compare/2.0.0...2.1.0)
 ### Changed

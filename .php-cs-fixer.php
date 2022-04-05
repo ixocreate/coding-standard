@@ -23,22 +23,24 @@ foreach ($optionalDirs as $dir) {
     }
 }
 
-return PhpCsFixer\Config::create()
+$config = new PhpCsFixer\Config();
+
+$config
     ->setRiskyAllowed(true)
     ->setRules([
         'header_comment' => [
             'header' => $header,
-            'commentType' => 'PHPDoc',
+            'comment_type' => 'PHPDoc',
             'location' => 'after_open',
             'separate' => 'bottom',
         ],
 
         '@PSR2' => true,
-        'psr4' => true,
+        'psr_autoloading' => true,
         'declare_strict_types' => true,
 
         // comments
-        'hash_to_slash_comment' => true,
+        'single_line_comment_style' => ['comment_types' => ['hash']],
         'no_empty_comment' => false,
         'no_empty_phpdoc' => false,
         'phpdoc_add_missing_param_annotation' => true,
@@ -54,7 +56,7 @@ return PhpCsFixer\Config::create()
             'sort_algorithm' => 'alpha',
         ],
 
-        'class_attributes_separation' => ['elements' => ['const', 'method', 'property']],
+        'class_attributes_separation' => ['elements' => ['const' => 'one', 'method' => 'one', 'property' => 'one']],
         'single_blank_line_before_namespace' => true,
         'combine_consecutive_unsets' => true,
         'concat_space' => ['spacing' => 'one'],
@@ -70,7 +72,7 @@ return PhpCsFixer\Config::create()
         'mb_str_functions' => true,
         'modernize_types_casting' => true,
         'native_function_casing' => true,
-        'native_function_invocation' => true,
+        'native_function_invocation' => ['include' => ['@internal', '@compiler_optimized'], 'scope' => 'namespaced', 'strict' => true],
         'new_with_braces' => true,
         'no_alias_functions' => true,
         'no_empty_statement' => true,
@@ -87,8 +89,10 @@ return PhpCsFixer\Config::create()
         'random_api_migration' => true,
         'short_scalar_cast' => true,
         'standardize_not_equals' => true,
-        'trailing_comma_in_multiline_array' => true,
+        'trailing_comma_in_multiline' => true,
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()->in($dirs)
     );
+
+return $config;

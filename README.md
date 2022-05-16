@@ -14,7 +14,7 @@ composer require ixocreate/coding-standard
 ## Usage
 
 ```sh
-vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config vendor/ixocreate/coding-standard/.php_cs
+vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config vendor/ixocreate/coding-standard/.php-cs-fixer.php
 ```
 
 For convenience added as `composer.json` script:
